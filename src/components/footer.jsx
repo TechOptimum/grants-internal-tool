@@ -160,7 +160,7 @@ export default function Footer() {
         bg="blue.600"
         justifyContent="space-between"
         alignItems={{ base: "center", md: "center" }}
-        padding="40px 12% "
+        padding={isLargerThan600 ? "15px 5%" : "15px 12%"}
         direction={{ base: "column", md: "row" }}
         gap={{ base: "20px", md: "0px" }}
       >
