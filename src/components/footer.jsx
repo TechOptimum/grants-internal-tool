@@ -37,7 +37,7 @@ const socialLinks = [
 
 const footerLinks = [
   {
-    section: "ABOUT",
+    section: "GRANT WRITING",
     links: [
       { href: "./about", text: "The Team" },
       { href: "./contact", text: "Contact" },
@@ -45,7 +45,7 @@ const footerLinks = [
     ],
   },
   {
-    section: "COURSES",
+    section: "COMPANY",
     links: [
       {
         href: "https://dashboard.techoptimum.org",
@@ -64,18 +64,8 @@ const footerLinks = [
       },
     ],
   },
-  {
-    section: "OTHER",
-    links: [
-      { href: "/sponsorship", text: "Sponsor Us" },
-      {
-        href: "https://dashboard.techoptimum.org",
-        text: "Learning Platform",
-        isExternal: true,
-      },
-      { href: "/discord", text: "Discord" },
-    ],
-  },
+
+  
 ];
 
 const FooterSection = ({ heading, links }) => (
@@ -83,7 +73,8 @@ const FooterSection = ({ heading, links }) => (
     direction={"column"}
     h="130px"
     justifyContent="space-between"
-    alignItems={{ base: "center", md: "start" }}
+    ml="2rem"
+    
   >
     <Heading fontSize="md">{heading}</Heading>
     {links.map(({ href, text }, idx) => (
@@ -158,9 +149,9 @@ export default function Footer() {
       <Flex
         transition="300ms"
         bg="blue.600"
-        justifyContent="space-between"
+        justifyContent="center"
         alignItems={{ base: "center", md: "center" }}
-        padding={isLargerThan600 ? "15px 5%" : "15px 12%"}
+        padding="40px 12% "
         direction={{ base: "column", md: "row" }}
         gap={{ base: "20px", md: "0px" }}
       >

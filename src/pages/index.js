@@ -18,19 +18,20 @@ import { FaBook, FaCheck, FaDatabase } from "react-icons/fa";
 const ToolCard = ({ title, link, description, icon }) => {
   return (
     <Box color="primary">
-      <Link _hover={{
-            textDecoration: "none",
-
-        
-      }} href={link}>
+      <Link
+        _hover={{
+          textDecoration: "none",
+        }}
+        href={link}
+      >
         <Flex
-         transition=".2s"
+          transition=".3s"
           maxW={"445px"}
           w={"full"}
           bg={useColorModeValue("white", "gray.900")}
           boxShadow={"2xl"}
           _hover={{
-            boxShadow: "sm",
+            boxShadow: "xs",
           }}
           rounded={"md"}
           p={6}
